@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paint</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./paint.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="side-menu">
+            <div class="colors" id="colors">
+                <div class="row" id="row1">
+                    <div class="color blue" id="blue"> </div>
+                    <div class="color red" id="red"> </div>
+                </div>
+                <div class="row" id="row2">
+                    <div class="color green" id="green"> </div>
+                    <div class="color black" id="black"> </div>
+                </div>
+                <div class="row" id="row3">
+                    <div class="color yellow" id="yellow"> </div>
+                    <div class="color orange" id="orange"> </div>
+                </div>
+            </div>
+
+            <div class="size" id="siz">
+                <p class="text">Brush size</p>
+
+                <input list="sizes" name="sizess" class="one">
+                <datalist id="sizes" class="two">
+                    <option id="1" value="5px">
+                    <option id="2" value="10px">
+                    <option id="3" value="15px">
+                    <option id="4" value="20px">
+                    <option id="5" value="30px">
+                </datalist>
+
+                <button id="sub" class="button" type="button">Submit</button>
+            </div>
+
+            <button class="eraser" id="eraser">Eraser </button>
+            <button class="eraseAll" id="eraseAll">EraserAll </button>
+
+            <div class="canvas_size" id="canvas_size">
+                Canvas width:<br>
+                <input type="number" id="width" class="width" maxlength="10">
+                <br>
+                Canvas heigth:<br>
+                <input type="number" id="heigth" class="heigth" maxlength="10">
+                <br>
+                <button id="canvasz" type="button">Submit</button>
+
+            </div>
+
+            <div class="shapes" id="shapes">
+                <div class="shapetext"> Brush Shape </div>
+
+                <div class="shape" id="shape">
+                    <div class="icons" id="boxx"><i class="far fa-square"></i> </div>
+                    <div class="icons" id="cir"> <i class="far fa-circle"></i> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="scren">
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./paint.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
